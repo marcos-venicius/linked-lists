@@ -10,6 +10,9 @@ this lib abstracts the linked list behavior to a friendly `SinglyLinkedList<T>` 
 - [Has](#has)
 - [FindByIndex](#find-by-index)
 - [ToString](#to-string)
+- [ToArray](#to-array) extension method
+- [ForEach](#foreach) extension method
+- [Sum](#sum) extension method
 
 ### Add
 
@@ -116,4 +119,61 @@ structure.Add('C');
 var str = structure.ToString();
 
 Console.WriteLine(str); // A -> B -> C
+```
+
+### To Array
+
+this operation allow you to convert the linked list to a `IEnumerable<T>`.
+
+```csharp
+var structure = new SinglyLinkedList<char>();
+
+structure.Add('A');
+structure.Add('B');
+structure.Add('C');
+
+var array = structure.ToArray().ToList();
+
+Console.WriteLine(array[0]); // A
+Console.WriteLine(array[1]); // B
+Console.WriteLine(array[2]); // C
+```
+
+### ForEach
+
+this operation allow you to iterate over the entire linked list, from head to tail and you have access to the value in
+the iteration
+
+```csharp
+var structure = new SinglyLinkedList<char>();
+
+structure.Add('A');
+structure.Add('B');
+structure.Add('C');
+
+structure.ForEach(value => {
+    // the value will be A, B, C .....
+});
+```
+
+### Sum
+
+this operations will only appear on specific types of list. for now, this types are allowed:
+
+- int
+- double
+- float
+
+this operation allow you to sum the linked list
+
+```csharp
+var structure = new SinglyLinkedList<int>();
+
+structure.Add(10);
+structure.Add(20);
+structure.Add(30);
+
+var sum = structure.Sum();
+
+Console.WriteLine(sum); // 60
 ```
