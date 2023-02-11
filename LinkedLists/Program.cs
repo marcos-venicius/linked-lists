@@ -5,6 +5,8 @@
 // - [x] write a function that converts a singly linked list to an array
 // - [x] write a function to find a node
 // - [x] write a function to check if has a node on list
+// - [x] write a function to sum linked list
+// - [x] write a foreach function
 
 public static class Program
 {
@@ -44,5 +46,12 @@ public static class Program
         
         foreach (var value in array)
             Console.WriteLine(value);
+
+        Console.WriteLine("\n FOREACH \n");
+        
+        structure.ForEach((chr, index) =>
+        {
+            Console.WriteLine($"INDEX [{index}] : {chr}");
+        });
     }
 }

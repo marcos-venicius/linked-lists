@@ -2,11 +2,13 @@
 
 namespace LinkedLists;
 
+public delegate void ForEach<in T>(T data, int index);
+
 public sealed class SinglyLinkedList<T>
 {
     public Node<T>? Head { get; private set; }
     public Node<T>? Tail { get; private set; }
-
+    
     public override string ToString()
     {
         StringBuilder stringBuilder = new();
@@ -77,6 +79,19 @@ public sealed class SinglyLinkedList<T>
         }
 
         return current;
+    }
+
+    public void ForEach(ForEach<T> predicate)
+    {
+        var current = Head;
+        var index = 0;
+
+        while (current is not null)
+        {
+            predicate(current.Value, index++);
+
+            current = current.Next;
+        }
     }
 }
 
