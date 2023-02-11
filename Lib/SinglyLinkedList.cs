@@ -2,6 +2,10 @@
 
 namespace Lib;
 
+/// <summary>
+/// singly linked list data structure abstraction
+/// </summary>
+/// <typeparam name="T">value type you to store</typeparam>
 public sealed class SinglyLinkedList<T>
 {
     public Node<T>? Head { get; private set; }
@@ -25,6 +29,29 @@ public sealed class SinglyLinkedList<T>
             Head = node;
             Tail = node;
             Head.Next = Tail;
+            Tail.Next = null;
+        }
+    }
+
+    /// <summary>
+    /// add node to head of linked list
+    /// </summary>
+    /// <param name="data">data</param>
+    public void AddOnTop(T data)
+    {
+        var node = new Node<T>(data);
+
+        if (Head is not null)
+        {
+            node.Next = Head;
+            Head = node;
+        }
+        else
+        {
+            Head = node;
+            Tail = node;
+            Head.Next = Tail;
+            Tail.Next = null;
         }
     }
 
@@ -47,6 +74,13 @@ public sealed class SinglyLinkedList<T>
 
         return null;
     }
+
+    /// <summary>
+    /// check if have a node with this <paramref name="data"/>
+    /// </summary>
+    /// <param name="data">data to find</param>
+    /// <returns>return true if at least one node with this value is found</returns>
+    public bool Has(T data) => FindFirst(data) is not null;
 
     private Node<T>? FindByIndex(uint index)
     {

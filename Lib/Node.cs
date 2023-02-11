@@ -8,6 +8,7 @@ public sealed class Node<T>
     public Node(T value)
     {
         Value = value;
+        Next = null;
     }
 
     public override string? ToString()
