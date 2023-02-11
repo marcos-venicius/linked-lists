@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace SinglyLinkedList;
+namespace Lib;
 
 public sealed class SinglyLinkedList<T>
 {

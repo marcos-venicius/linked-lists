@@ -1,4 +1,4 @@
-﻿namespace SinglyLinkedList;
+﻿namespace Lib;
 
 public sealed class Node<T>
 {
