@@ -1,8 +1,10 @@
 ﻿namespace LinkedLists;
 
-// - [ ] write a function that prints a singly linked list on display
-// - [ ] write a function to get the last node in a singly linked list
-// - [ ] write a function that converts a singly linked list to an array
+// - [x] write a function that prints a singly linked list on display
+// - [x] write a function to get the last node in a singly linked list
+// - [x] write a function that converts a singly linked list to an array
+// - [x] write a function to find a node
+// - [x] write a function to check if has a node on list
 
 public static class Program
 {
