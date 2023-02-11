@@ -7,6 +7,7 @@
 // - [x] write a function to check if has a node on list
 // - [x] write a function to sum linked list
 // - [x] write a foreach function
+// - [x] write a function to get node by index
 
 public static class Program
 {
@@ -18,7 +19,7 @@ public static class Program
         integers.Add(1);
         integers.Add(2);
         integers.Add(3);
-        
+
         doubles.Add(1);
         doubles.Add(2.1);
         doubles.Add(2.9);
@@ -36,11 +37,15 @@ public static class Program
         structure.Add('D');
         structure.AddOnTop('A');
 
+        Console.WriteLine($"structure[0]: {structure[0]}");
+
+        Console.WriteLine($"structure[1]: {structure[1]}");
+        
         var array = structure.ToArray();
         
         Console.WriteLine(structure);
 
-        Console.WriteLine($"HAS 'B': {structure.Has('B')} {structure.FindFirst('B')?.Value}");
+        Console.WriteLine($"HAS 'B': {structure.Has('B')} {structure['B']?.Value}");
 
         Console.WriteLine();
         

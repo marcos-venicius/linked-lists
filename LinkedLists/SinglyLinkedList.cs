@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Runtime.CompilerServices;
+using System.Text;
 
 namespace LinkedLists;
 
@@ -8,7 +9,7 @@ public sealed class SinglyLinkedList<T>
 {
     public Node<T>? Head { get; private set; }
     public Node<T>? Tail { get; private set; }
-    
+
     public override string ToString()
     {
         StringBuilder stringBuilder = new();
@@ -93,6 +94,26 @@ public sealed class SinglyLinkedList<T>
             current = current.Next;
         }
     }
+
+    private Node<T>? FindByIndex(int index)
+    {
+        var current = Head;
+        var currentIndex = 0;
+
+        while (current is not null)
+        {
+            if (currentIndex == index)
+                return current;
+
+            currentIndex++;
+            current = current.Next;
+        }
+
+        return current;
+    }
+
+    [IndexerName("SinglyLinkedListIndexer")]
+    public Node<T>? this[uint index] => FindByIndex((int)index);
 }
 
 public static class SinglyLinkedListExt
