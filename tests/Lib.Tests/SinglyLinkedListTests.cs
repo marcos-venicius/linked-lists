@@ -1,9 +1,24 @@
-using Lib.Extensions;
-
 namespace Lib.Tests;
 
 public class SinglyLinkedListTests
 {
+    [Theory]
+    [InlineData(new[] { 1, 2, 3, 4, 5 }, 3)]
+    [InlineData(new[] { 1, 2, 3, 4 }, 3)]
+    [InlineData(new[] { 1 }, 1)]
+    [InlineData(new int[] { }, null)]
+    public void Should_Get_Middle_Node(int[] nodes, int? expected)
+    {
+        var structure = new SinglyLinkedList<int>();
+
+        foreach (var node in nodes)
+            structure.Add(node);
+
+        var middleNode = structure.GetMiddle();
+
+        Assert.Equal(expected, middleNode?.Value);
+    }
+
     [Fact]
     public void Should_Start_Head_And_Tail_As_Null()
     {
@@ -17,9 +32,9 @@ public class SinglyLinkedListTests
     public void Head_And_Tail_Should_Be_The_Same_When_Add_To_The_Top_As_First_Node()
     {
         var structure = new SinglyLinkedList<int>();
-        
+
         structure.AddOnTop(10);
-        
+
         Assert.Equal(10, structure.Head?.Value);
         Assert.Same(structure.Head, structure.Tail);
 
@@ -31,12 +46,12 @@ public class SinglyLinkedListTests
     public void Node_Appended_Should_Be_The_List_Head_When_Add_On_Top_But_The_List_Already_Has_Nodes()
     {
         var structure = new SinglyLinkedList<int>();
-        
+
         structure.Add(1);
         structure.Add(2);
         structure.Add(3);
         structure.AddOnTop(0);
-        
+
         Assert.Equal(0, structure.Head?.Value);
         Assert.Equal(structure.Head?.Next?.Value, 1);
 

@@ -17,6 +17,7 @@ this lib abstracts the linked list behavior to a friendly `SinglyLinkedList<T>` 
 - [FindFirst](#find-first)
 - [Has](#has)
 - [FindByIndex](#find-by-index)
+- [GetMiddle](#get-middle)
 - [ToString](#to-string)
 - [ToArray](#to-array) extension method
 - [ForEach](#foreach) extension method
@@ -111,6 +112,30 @@ var notFoundNode = structure[10];
 
 Console.WriteLine(node); // 20
 Console.WriteLine(notFoundNode) // <empty> (because returns null instead of an exception)
+```
+
+### Get Middle
+
+with this operation you will get the middle node on the linked list
+
+```csharp
+var structure1 = new SinglyLinkedList<int>();
+var structure2 = new SinglyLinkedList<int>();
+
+structure1.Add(10);
+structure1.Add(20);
+structure1.Add(30);
+
+structure2.Add(10);
+structure2.Add(20);
+structure2.Add(30);
+structure2.Add(40);
+
+var node1 = structure1.GetMiddle();
+var node2 = structure2.GetMiddle();
+
+Console.WriteLine(node1); // 20
+Console.WriteLine(node2); // 30
 ```
 
 ### To String

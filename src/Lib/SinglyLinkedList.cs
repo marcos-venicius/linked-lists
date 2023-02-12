@@ -91,7 +91,7 @@ public sealed class SinglyLinkedList<T>
         {
             if (currentIndex == index)
                 return current;
-            
+
             currentIndex++;
             current = current.Next;
         }
@@ -104,6 +104,20 @@ public sealed class SinglyLinkedList<T>
     /// </summary>
     /// <param name="index">node index</param>
     public Node<T>? this[uint index] => FindByIndex(index);
+
+    public Node<T>? GetMiddle()
+    {
+        var end = Head;
+        var middle = Head;
+
+        while (end?.Next is not null)
+        {
+            middle = middle?.Next;
+            end = end.Next.Next;
+        }
+
+        return middle;
+    }
 
     public override string ToString()
     {
