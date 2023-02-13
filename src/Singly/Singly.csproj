@@ -8,8 +8,8 @@
         <Title>Singly Linked List Abstraction</Title>
         <Authors>Marcos Venicius</Authors>
         <Description>a friendly linked list abstraction</Description>
-        <PackageProjectUrl>https://github.com/marcos-venicius/singly-linked-list-lib</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/marcos-venicius/singly-linked-list-lib.git</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/marcos-venicius/linked-lists</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/marcos-venicius/linked-lists.git</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <Copyright>Copyright (c) marcos-venicius 2023</Copyright>
         <PackageTags>linked-lists data-structures</PackageTags>
