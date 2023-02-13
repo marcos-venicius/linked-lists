@@ -1,4 +1,4 @@
-﻿namespace Lib;
+﻿namespace SinglyLinkedListAbstraction;
 
 public sealed class Node<T>
 {

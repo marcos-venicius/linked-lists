@@ -1,7 +1,7 @@
 ﻿using System.Text;
-using Lib.Extensions;
+using SinglyLinkedListAbstraction.Extensions;
 
-namespace Lib;
+namespace SinglyLinkedListAbstraction;
 
 /// <summary>
 /// singly linked list data structure abstraction

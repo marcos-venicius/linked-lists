@@ -22,7 +22,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\Lib\Lib.csproj" />
+      <ProjectReference Include="..\..\src\SinglyLinkedListAbstraction\SinglyLinkedListAbstraction.csproj" />
     </ItemGroup>
 
 </Project>

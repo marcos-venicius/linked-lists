@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lib", "src\Lib\Lib.csproj", "{2EA46A62-7E93-42EC-BA97-2442B2F10F7B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinglyLinkedListAbstraction", "src\SinglyLinkedListAbstraction\SinglyLinkedListAbstraction.csproj", "{2EA46A62-7E93-42EC-BA97-2442B2F10F7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lib.Tests", "tests\Lib.Tests\Lib.Tests.csproj", "{537FD16E-5993-48CD-9BD0-1E965F37FA1A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinglyLinkedListAbstraction.Tests", "tests\SinglyLinkedListAbstraction.Tests\SinglyLinkedListAbstraction.Tests.csproj", "{537FD16E-5993-48CD-9BD0-1E965F37FA1A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,4 @@
-﻿namespace Lib.Extensions;
+﻿namespace SinglyLinkedListAbstraction.Extensions;
 
 public static class SinglyLinkedListExtensions
 {
