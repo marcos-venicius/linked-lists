@@ -11,6 +11,7 @@
         <RepositoryUrl>https://github.com/marcos-venicius/singly-linked-list-lib.git</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageTags>linked-lists data-structures</PackageTags>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     </PropertyGroup>
 
 </Project>
