@@ -14,7 +14,7 @@ this lib abstracts the linked list behavior to a friendly `SinglyLinkedList<T>` 
 
 - [Add](#add)
 - [AddOnTop](#add-on-top)
-- [FindFirst](#find-first)
+- [FindFirstOrDefault](#find-first-or-default)
 - [Has](#has)
 - [FindByIndex](#find-by-index)
 - [GetMiddle](#get-middle)
@@ -55,9 +55,9 @@ structure.AddOnTop(30); // 30 -> 20 -> 10
 Console.WriteLine(structure); // 30 -> 20 -> 10
 ```
 
-### Find First
+### Find First Or Default
 
-with this operation you can get the first node that has the value you pass as argument
+with this operation you can get the first node that has the value you pass as argument or default value
 
 ```csharp
 var structure = new SinglyLinkedList<int>();
@@ -68,7 +68,7 @@ structure.Add(10);
 structure.Add(20);
 structure.Add(30);
 
-var node = structure.FindFirst(20);
+var node = structure.FindFirstOrDefault(20);
 
 Console.WriteLine(node); // 20
 Console.WriteLine(node?.Next); // 30

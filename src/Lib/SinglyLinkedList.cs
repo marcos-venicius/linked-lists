@@ -56,11 +56,11 @@ public sealed class SinglyLinkedList<T>
     }
 
     /// <summary>
-    /// find the first node that has the <paramref name="data"/>
+    /// find the first node that has the <paramref name="data"/> or default value
     /// </summary>
     /// <param name="data">value to search</param>
     /// <returns>if found, node. if not found, null</returns>
-    public Node<T>? FindFirst(T data)
+    public Node<T>? FindFirstOrDefault(T data)
     {
         var current = Head;
 
@@ -72,7 +72,7 @@ public sealed class SinglyLinkedList<T>
             current = current.Next;
         }
 
-        return null;
+        return default;
     }
 
     /// <summary>
@@ -80,7 +80,7 @@ public sealed class SinglyLinkedList<T>
     /// </summary>
     /// <param name="data">data to find</param>
     /// <returns>return true if at least one node with this value is found</returns>
-    public bool Has(T data) => FindFirst(data) is not null;
+    public bool Has(T data) => FindFirstOrDefault(data) is {};
 
     private Node<T>? FindByIndex(uint index)
     {

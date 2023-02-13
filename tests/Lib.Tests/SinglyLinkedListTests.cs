@@ -89,7 +89,7 @@ public class SinglyLinkedListTests
     }
 
     [Fact]
-    public void Should_Return_Node_With_Value_When_Call_FindFirst()
+    public void Should_Return_Node_With_Value_When_Call_FindFirstOrDefault()
     {
         var structure = new SinglyLinkedList<int>();
 
@@ -98,14 +98,14 @@ public class SinglyLinkedListTests
             structure.Add(i);
         }
 
-        var node = structure.FindFirst(567);
+        var node = structure.FindFirstOrDefault(567);
 
         Assert.Equal(node?.Value, 567);
         Assert.Equal(node?.Next?.Value, 568);
     }
 
     [Fact]
-    public void Should_Return_Null_With_Node_Not_Found_In_FindFirst()
+    public void Should_Return_Null_With_Node_Not_Found_In_FindFirstOrDefault()
     {
         var structure = new SinglyLinkedList<int>();
 
@@ -114,7 +114,7 @@ public class SinglyLinkedListTests
             structure.Add(i);
         }
 
-        var node = structure.FindFirst(-1);
+        var node = structure.FindFirstOrDefault(-1);
 
         Assert.Null(node);
     }
