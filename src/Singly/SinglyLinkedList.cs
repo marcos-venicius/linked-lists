@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace SinglyLinkedListAbstraction;
+namespace Singly;
 
 /// <summary>
 /// singly linked list data structure abstraction

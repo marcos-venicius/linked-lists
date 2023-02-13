@@ -1,6 +1,6 @@
-﻿using SinglyLinkedListAbstraction.Extensions;
+﻿using Singly.Extensions;
 
-namespace SinglyLinkedListAbstraction.Tests;
+namespace Singly.Tests;
 
 public class SinglyLinkedListExtensionsTests
 {

@@ -1,4 +1,4 @@
-﻿namespace SinglyLinkedListAbstraction;
+﻿namespace Singly;
 
 public sealed class Node<T>
 {
