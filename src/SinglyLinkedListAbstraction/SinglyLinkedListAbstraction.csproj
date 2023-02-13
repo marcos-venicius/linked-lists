@@ -4,6 +4,13 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <Title>Singly Linked List Abstraction</Title>
+        <Authors>Marcos Venicius</Authors>
+        <Description>a friendly linked list abstraction</Description>
+        <PackageProjectUrl>https://github.com/marcos-venicius/singly-linked-list-lib</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/marcos-venicius/singly-linked-list-lib.git</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>linked-lists data-structures</PackageTags>
     </PropertyGroup>
 
 </Project>
