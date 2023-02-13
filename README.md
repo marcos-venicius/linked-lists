@@ -2,13 +2,9 @@
 
 this lib abstracts the linked list behavior to a friendly `SinglyLinkedList<T>` class
 
-<br />
-<br />
-<div align="center">
+----- 
 
 [![Lib Test](https://github.com/marcos-venicius/singly-linked-list-csharp/actions/workflows/test-lib.yml/badge.svg)](https://github.com/marcos-venicius/singly-linked-list-csharp/actions/workflows/test-lib.yml)
-
-</div>
 
 ## Operations
 
