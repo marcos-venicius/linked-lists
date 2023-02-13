@@ -1,3 +1,5 @@
+using Lib.Extensions;
+
 namespace Lib.Tests;
 
 public class SinglyLinkedListTests
@@ -174,5 +176,35 @@ public class SinglyLinkedListTests
         var result = structure.Has('D');
 
         Assert.False(result);
+    }
+
+    [Fact]
+    public void Should_Reverse_Linked_List()
+    {
+        var structure = new SinglyLinkedList<char>();
+
+        structure.Add('A');
+        structure.Add('B');
+        structure.Add('C');
+        structure.Add('D');
+
+        var headBeforeReverse = structure.Head;
+        var tailBeforeReverse = structure.Tail;
+
+        structure.Reverse();
+
+        var array = structure.ToArray().ToList();
+
+        Assert.Equal('D', array[0]);
+        Assert.Equal('C', array[1]);
+        Assert.Equal('B', array[2]);
+        Assert.Equal('A', array[3]);
+
+        Assert.Null(structure.Tail?.Next);
+        
+        Assert.Same(headBeforeReverse, structure.Tail);
+        Assert.Same(tailBeforeReverse, structure.Head);
+        
+        Assert.Equal("D -> C -> B -> A", structure.ToString());
     }
 }

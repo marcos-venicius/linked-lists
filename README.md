@@ -18,6 +18,7 @@ this lib abstracts the linked list behavior to a friendly `SinglyLinkedList<T>` 
 - [Has](#has)
 - [FindByIndex](#find-by-index)
 - [GetMiddle](#get-middle)
+- [Reverse](#reverse)
 - [ToString](#to-string)
 - [ToArray](#to-array) extension method
 - [ForEach](#foreach) extension method
@@ -136,6 +137,23 @@ var node2 = structure2.GetMiddle();
 
 Console.WriteLine(node1); // 20
 Console.WriteLine(node2); // 30
+```
+
+### Reverse
+
+this operation will reverse the linked list nodes
+
+```csharp
+var structure = new SinglyLinkedList<char>();
+
+structure.Add('A');
+structure.Add('B');
+structure.Add('C');
+structure.Add('D');
+
+var str = structure.ToString();
+
+Console.WriteLine(str); // D -> C -> B -> A
 ```
 
 ### To String

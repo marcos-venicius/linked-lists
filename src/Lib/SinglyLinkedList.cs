@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using Lib.Extensions;
 
 namespace Lib;
 
@@ -80,7 +81,7 @@ public sealed class SinglyLinkedList<T>
     /// </summary>
     /// <param name="data">data to find</param>
     /// <returns>return true if at least one node with this value is found</returns>
-    public bool Has(T data) => FindFirstOrDefault(data) is {};
+    public bool Has(T data) => FindFirstOrDefault(data) is { };
 
     private Node<T>? FindByIndex(uint index)
     {
@@ -119,6 +120,42 @@ public sealed class SinglyLinkedList<T>
         return middle;
     }
 
+    /// <summary>
+    /// reverse the linked list
+    /// </summary>
+    public void Reverse()
+    {
+        // imagine we have the following list: A -> B -> C -> D
+        // we will point:
+        // A -> Null
+        // B -> A
+        // C -> B
+        // D -> C
+
+        // making the D to be the head and A to be the tail
+
+        if (Head is null)
+            return;
+
+        Tail = Head;
+
+        Node<T>? prev = null;
+        var current = Head;
+
+        while (current is not null)
+        {
+            var next = current.Next;
+
+            current.Next = prev;
+
+            prev = current;
+            current = next;
+        }
+
+        Head = prev;
+        Tail.Next = null;
+    }
+
     public override string ToString()
     {
         StringBuilder stringBuilder = new();
@@ -134,8 +171,6 @@ public sealed class SinglyLinkedList<T>
 
             current = current.Next;
         }
-
-        stringBuilder.AppendLine();
 
         return stringBuilder.ToString();
     }
