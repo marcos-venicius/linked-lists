@@ -6,6 +6,9 @@ this lib abstracts the linked list behavior to a friendly `SinglyLinkedList<T>` 
 
 [![Lib Test](https://github.com/marcos-venicius/singly-linked-list-csharp/actions/workflows/test-lib.yml/badge.svg)](https://github.com/marcos-venicius/singly-linked-list-csharp/actions/workflows/test-lib.yml)
 
+![image](https://user-images.githubusercontent.com/94018427/218503850-806ef9b5-24f8-4112-93e0-73538116f1dc.png)
+
+
 ## Operations
 
 - [Add](#add)
