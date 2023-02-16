@@ -5,15 +5,15 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <PackageId>DevOne.LinkedLists</PackageId>
-        <Title>Singly Linked List Abstraction</Title>
+        <Title>Linked Lists Abstractions</Title>
         <Authors>Marcos Venicius</Authors>
-        <PackageVersion>1.0.1</PackageVersion>
-        <Description>a friendly linked list abstraction</Description>
+        <PackageVersion>2.0.0</PackageVersion>
+        <Description>Friendly linked lists abstractions</Description>
         <PackageProjectUrl>https://github.com/marcos-venicius/linked-lists</PackageProjectUrl>
         <RepositoryUrl>https://github.com/marcos-venicius/linked-lists.git</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <Copyright>Copyright (c) marcos-venicius 2023</Copyright>
-        <PackageTags>linked-lists data-structures</PackageTags>
+        <PackageTags>linked-lists data-structures singly-linked-list</PackageTags>
         <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>

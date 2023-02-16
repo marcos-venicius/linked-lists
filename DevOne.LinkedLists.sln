@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singly", "src\Singly\Singly.csproj", "{2EA46A62-7E93-42EC-BA97-2442B2F10F7B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedLists.Singly", "src\LinkedLists.Singly\LinkedLists.Singly.csproj", "{2EA46A62-7E93-42EC-BA97-2442B2F10F7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singly.Tests", "tests\Singly.Tests\Singly.Tests.csproj", "{537FD16E-5993-48CD-9BD0-1E965F37FA1A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedLists.Singly.Tests", "tests\LinkedLists.Singly.Tests\LinkedLists.Singly.Tests.csproj", "{537FD16E-5993-48CD-9BD0-1E965F37FA1A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

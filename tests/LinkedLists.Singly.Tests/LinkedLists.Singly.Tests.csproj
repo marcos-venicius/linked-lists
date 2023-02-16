@@ -6,8 +6,6 @@
         <Nullable>enable</Nullable>
 
         <IsPackable>false</IsPackable>
-
-        <RootNamespace>Singly.Tests</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -24,7 +22,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\Singly\Singly.csproj" />
+      <ProjectReference Include="..\..\src\LinkedLists.Singly\LinkedLists.Singly.csproj" />
     </ItemGroup>
 
 </Project>

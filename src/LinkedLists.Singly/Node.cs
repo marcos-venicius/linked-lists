@@ -1,4 +1,4 @@
-﻿namespace Singly;
+﻿namespace LinkedLists.Singly;
 
 public sealed class Node<T>
 {

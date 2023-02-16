@@ -1,6 +1,6 @@
-using Singly.Extensions;
+using LinkedLists.Singly.Extensions;
 
-namespace Singly.Tests;
+namespace LinkedLists.Singly.Tests;
 
 public class SinglyLinkedListTests
 {

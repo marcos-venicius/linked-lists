@@ -1,4 +1,4 @@
-﻿namespace Singly.Extensions;
+﻿namespace LinkedLists.Singly.Extensions;
 
 public static class SinglyLinkedListExtensions
 {
